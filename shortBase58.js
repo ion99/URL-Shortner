@@ -9,6 +9,7 @@ function encode(num){
     encoded = alphabet[remainder].toString() + encoded;
   }
   return encoded;
+  console.log("encoded", encoded);
 }
 
 function decode(str){
@@ -20,6 +21,7 @@ function decode(str){
     str = str.substring(1);
   }
   return decoded;
+  console.log("decoded", decoded);
 }
 
 module.exports.encode = encode;
