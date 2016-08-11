@@ -5,7 +5,7 @@ var path = require('path');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 var config = require('./config');
-var base58 = require('./base58.js');
+var base58 = require('./shortBase58.js');
 
 // grab the url model
 var Url = require('./models/url');
