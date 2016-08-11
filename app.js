@@ -3,6 +3,7 @@ var express = require('express');
 var app = express();
 var path = require('path');
 var bodyParser = require('body-parser');
+var bluebird = require('bluebird');
 var mongoose = require('mongoose');
 var config = require('./config');
 var base58 = require('./shortBase58.js');
