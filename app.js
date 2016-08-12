@@ -58,8 +58,9 @@ app.post('/api/shorten', function(req, res){
 app.get('/:encoded_id', function(req, res){
 
   var base58Id = req.params.encoded_id;
-
+  console.log("base58Id", base58Id);
   var id = base58.decode(base58Id);
+  console.log("id", id);
 
   // check if url already exists in database
   Url.findOne({_id: id}, function (err, doc){
